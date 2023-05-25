@@ -1,1 +1,481 @@
-:root{--topbar-height: 70px;--startbar-width: 300px;--endbar-width: 70px}@font-face{font-family:"Inter";src:local("Inter ExtraBold"),local("Inter-ExtraBold"),url("../fonts/Inter-ExtraBold.woff2") format("woff2"),url("../fonts/Inter-ExtraBold.woff") format("woff");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Black"),local("Inter-Black"),url("../fonts/Inter-Black.woff2") format("woff2"),url("../fonts/Inter-Black.woff") format("woff");font-weight:900;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Bold"),local("Inter-Bold"),url("../fonts/Inter-Bold.woff2") format("woff2"),url("../fonts/Inter-Bold.woff") format("woff");font-weight:bold;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter SemiBold"),local("Inter-SemiBold"),url("../fonts/Inter-SemiBold.woff2") format("woff2"),url("../fonts/Inter-SemiBold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter ExtraLight"),local("Inter-ExtraLight"),url("../fonts/Inter-ExtraLight.woff2") format("woff2"),url("../fonts/Inter-ExtraLight.woff") format("woff");font-weight:200;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Medium"),local("Inter-Medium"),url("../fonts/Inter-Medium.woff2") format("woff2"),url("../fonts/Inter-Medium.woff") format("woff");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Regular"),local("Inter-Regular"),url("../fonts/Inter-Regular.woff2") format("woff2"),url("../fonts/Inter-Regular.woff") format("woff");font-weight:normal;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Light"),local("Inter-Light"),url("../fonts/Inter-Light.woff2") format("woff2"),url("../fonts/Inter-Light.woff") format("woff");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:local("Inter Thin"),local("Inter-Thin"),url("../fonts/Inter-Thin.woff2") format("woff2"),url("../fonts/Inter-Thin.woff") format("woff");font-weight:100;font-style:normal;font-display:swap}[href*=javascript][target=_blank]{pointer-events:none}a.active[href],a.accordion-button:not(.collapsed){pointer-events:none}[data-scrollbar]>canvas{z-index:1000}body{position:fixed !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important;overflow-x:hidden !important;overflow-y:auto !important;outline:0 !important;display:block !important;font-family:"Inter" !important}body input,body textarea,body select{-webkit-user-select:auto;-moz-user-select:auto;user-select:auto}body main{width:100vw !important;max-width:none !important;height:100% !important;margin:0 !important;position:relative !important;overflow:hidden !important;padding:0px !important}body main>.mainInner{height:100% !important;border:0 !important;position:relative !important;display:flex !important;flex-direction:column !important;width:100% !important;outline:0 !important;overflow:hidden !important;margin:0px !important;flex-wrap:nowrap}body main>.mainInner>[data-page-name]{overflow:hidden auto}body .overflow-hidden-auto{overflow:hidden auto !important}body .overflow-auto-hidden{overflow:auto hidden !important}@media(min-width: 768px){*>*{scrollbar-width:thin !important;scrollbar-color:#38434e !important}*>*::-webkit-scrollbar{width:.3em;height:.3em}*>*::-webkit-scrollbar-track{background:rgba(0,0,0,0);border-radius:50em}*>*::-webkit-scrollbar-thumb{background:rgba(173,181,189,0);border-radius:50em}*>*::-webkit-scrollbar-thumb:hover{background:rgba(206,212,218,.6)}*>*>*:hover::-webkit-scrollbar{width:.3em;height:.3em}*>*>*:hover::-webkit-scrollbar-thumb{background:rgba(173,181,189,.1);border-radius:50em}*>*>*:hover::-webkit-scrollbar-thumb:hover{background:rgba(206,212,218,.8)}}
+:root {
+  --topbar-height: 70px;
+  --startbar-width: 300px;
+  --endbar-width: 70px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraBold"), local("Inter-ExtraBold"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Black"), local("Inter-Black"), url("../fonts/Inter-Black.woff2") format("woff2"), url("../fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"), local("Inter-Bold"), url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), local("Inter-SemiBold"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter ExtraLight"), local("Inter-ExtraLight"), url("../fonts/Inter-ExtraLight.woff2") format("woff2"), url("../fonts/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Light"), local("Inter-Light"), url("../fonts/Inter-Light.woff2") format("woff2"), url("../fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Thin"), local("Inter-Thin"), url("../fonts/Inter-Thin.woff2") format("woff2"), url("../fonts/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+[href*=javascript][target=_blank] {
+  pointer-events: none;
+}
+
+a.active[href],
+a.accordion-button:not(.collapsed) {
+  pointer-events: none;
+}
+
+[data-scrollbar] > canvas {
+  z-index: 1000;
+}
+
+body {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  outline: 0 !important;
+  display: block !important;
+  font-family: "Inter" !important;
+}
+body input, body textarea, body select {
+  user-select: auto;
+}
+body main {
+  width: 100vw !important;
+  max-width: none !important;
+  height: 100% !important;
+  margin: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 0px !important;
+}
+body main > .mainInner {
+  height: 100% !important;
+  border: 0 !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  outline: 0 !important;
+  overflow: hidden !important;
+  margin: 0px !important;
+  flex-wrap: nowrap;
+}
+body main > .mainInner > [data-page-name] {
+  overflow: hidden auto;
+}
+body .overflow-hidden-auto {
+  overflow: hidden auto !important;
+}
+body .overflow-auto-hidden {
+  overflow: auto hidden !important;
+}
+
+@media (min-width: 768px) {
+  * > * {
+    scrollbar-width: thin !important;
+    scrollbar-color: #f6f7fa !important;
+  }
+  * > *::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > *::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0);
+    border-radius: 50em;
+  }
+  * > *::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.6);
+  }
+  * > * > *:hover::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb {
+    background: rgba(173, 181, 189, 0.1);
+    border-radius: 50em;
+  }
+  * > * > *:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 212, 218, 0.8);
+  }
+}
+.dashBoardFluid {
+  background-color: #EFF2F6;
+}
+.dashBoardFluid .dashboardContainer .coverImage {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+}
+.dashBoardFluid .dashboardContainer .coverImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .profile {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 4px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 32px;
+  transform: translateX(-50%);
+}
+.dashBoardFluid .dashboardContainer .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .profileBar {
+  padding: 0 1.25rem;
+  background-color: #fff;
+  border-radius: 0 0 6px 6px;
+}
+.dashBoardFluid .dashboardContainer .profileBar .profileName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0F6FEC;
+}
+.dashBoardFluid .dashboardContainer .profileBar .profileDesignation {
+  font-size: 14px;
+  color: #6c757d;
+}
+.dashBoardFluid .dashboardContainer .profileBar .profilePara {
+  color: #6c757d;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.dashBoardFluid .dashboardContainer .profileBar .postCount {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .profileBar .post {
+  font-size: 13px;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .profileBar .socialLi {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+}
+.dashBoardFluid .dashboardContainer .profileBar .socialLi:last-child {
+  margin-bottom: 0;
+}
+.dashBoardFluid .dashboardContainer .profileBar .socialLi .socialLinks {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s linear;
+}
+.dashBoardFluid .dashboardContainer .profileBar .socialLi .socialLinks:hover {
+  transform: translateX(10px);
+  color: #6c757d;
+}
+.dashBoardFluid .dashboardContainer .profileBar .socialLi .socialLinks img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.dashBoardFluid .dashboardContainer .profileBar .viewMore {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0F6FEC;
+}
+.dashBoardFluid .dashboardContainer .addstory {
+  height: 200px;
+  border-radius: 6px;
+  background-color: #4d4d4d;
+}
+.dashBoardFluid .dashboardContainer .addstory .add {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashBoardFluid .dashboardContainer .addstory .add img {
+  height: 15px;
+}
+.dashBoardFluid .dashboardContainer .addstory .addText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+.dashBoardFluid .dashboardContainer .carousel {
+  overflow: hidden;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.dashBoardFluid .dashboardContainer .carousel .swiperSlide {
+  margin-right: 0;
+  width: 121px;
+}
+.dashBoardFluid .dashboardContainer .carousel .swiperSlide .stories {
+  width: 125px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.dashBoardFluid .dashboardContainer .carousel .swiperSlide .stories img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .carousel .swiperSlide .storyName {
+  position: absolute;
+  bottom: 15px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  left: 20px;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .who {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .who img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .textareaclass {
+  border-color: #EFF2F6;
+  background-color: #EFF2F6;
+  font-size: 12px;
+  height: 60px;
+  padding-left: 20px;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 6px;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .textareaclass:focus {
+  outline: unset;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .photo {
+  background-color: #EFF2F6;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .photo:hover {
+  color: #007732;
+}
+.dashBoardFluid .dashboardContainer .shareThoughts .photo img {
+  height: 15px;
+  margin-right: 5px;
+}
+.dashBoardFluid .dashboardContainer .review {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.dashBoardFluid .dashboardContainer .review .userBlog .user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.dashBoardFluid .dashboardContainer .review .userBlog .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .review .userBlog .userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .review .userBlog .Hour {
+  font-size: 12px;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .review .menu img {
+  width: 20px;
+}
+.dashBoardFluid .dashboardContainer .review .description {
+  font-size: 14px;
+  color: #adb5bd;
+}
+.dashBoardFluid .dashboardContainer .review .seeAnchor {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0F6FEC;
+}
+.dashBoardFluid .dashboardContainer .review .imgg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.dashBoardFluid .dashboardContainer .review .imgg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .review .imggg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  z-index: 0;
+}
+.dashBoardFluid .dashboardContainer .review .imggg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .review .fadee {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 700;
+  border-radius: 6px;
+  inset: 0;
+  margin: auto;
+}
+
+.modalFade .modalDialog .modalContent .modalHeader {
+  padding: 20px;
+}
+.modalFade .modalDialog .modalContent .modalHeader .modalTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.modalFade .modalDialog .modalContent .modalBody {
+  padding: 20px;
+}
+.modalFade .modalDialog .modalContent .modalBody .textareaclass {
+  border-color: #EFF2F6;
+  background-color: #EFF2F6;
+  font-size: 12px;
+  height: 60px;
+  padding-left: 20px;
+  padding: 8px 15px;
+  width: 100%;
+  border-radius: 6px;
+}
+.modalFade .modalDialog .modalContent .modalBody .textareaclass:focus {
+  outline: unset;
+}
+.modalFade .modalDialog .modalContent .modalBody .uploadTxt {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.modalFade .modalDialog .modalContent .modalBody .box {
+  width: 100%;
+  height: 200px;
+  border: 1px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalFade .modalDialog .modalContent .modalBody .box .gallary img {
+  height: 20px;
+}
+.modalFade .modalDialog .modalContent .modalBody .box .txt {
+  font-size: 13px;
+}
+.modalFade .modalDialog .modalContent .modalFooter {
+  padding: 20px;
+}
+.modalFade .modalDialog .modalContent .modalFooter .closeBtn {
+  border: 1px solid #d10015;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d10015;
+  background-color: #ffd1d6;
+}
+.modalFade .modalDialog .modalContent .modalFooter .saveBtn {
+  border: 1px solid #00aa47;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #00aa47;
+  background-color: #aaffce;
+}/*# sourceMappingURL=style.min.css.map */

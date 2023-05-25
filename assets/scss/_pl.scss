@@ -1,8 +1,342 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  example start  ]@@@@@@@@@@@@@@@@@@@@@@
 // [data-page-name=example] {
     @include media-breakpoint(basic) {
+        .dashBoardFluid{
+            background-color: $theme2;
+            & .dashboardContainer{
+                & .coverImage{
+                    width: 100%;
+                    height: 60px;
+                    overflow: hidden;
+                    border-radius: 6px 6px  0  0;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .profile{
+                    width: 70px;
+                    height: 70px;
+                    overflow: hidden;
+                    border-radius: 6px;
+                    border: 4px solid $white;
+                    position: absolute;
+                    left: 50%;
+                    top: 32px;
+                    transform: translateX(-50%);
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .profileBar{
+                    padding: 0 1.25rem;
+                    background-color: $white;
+                    border-radius: 0 0 6px 6px;
+                    & .profileName{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $theme1;
+                    }
+                    & .profileDesignation{
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+                    & .profilePara{
+                        color: $gray-600;
+                        font-size: 16px;
+                        margin-top: 15px;
+                    }
+                    & .postCount{
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    & .post{
+                        font-size: 13px;
+                        color: $black;
+                    }
+                    & .socialLi{
+                        margin-bottom: 10px;
+                        align-items: center;
+                        display: flex;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        & .socialLinks{
+                            color: $black;
+                            font-size: 14px;
+                            font-weight: 600;
+                            transition: 0.3s linear;
+                            &:hover{
+                                transform: translateX(10px);
+                                color: $gray-600;
+                            }
+                            & img{
+                                width: 20px;
+                                height: 20px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                    & .viewMore{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $theme1;
+                    }
+                }
+                & .addstory{
+                    // width: 125px;
+                    height: 200px;
+                    border-radius: 6px;
+                    background-color: lighten($color: $black, $amount: 30);
+                    & .add{
+                        background-color: $white;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            height: 15px;
+                        }
+                    }
+                    & .addText{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $white;
+                    }
+                }
+                & .carousel{
+                    overflow: hidden;
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    & .swiperSlide{
+                        margin-right: 0;
+                        width: 121px;
+                        & .stories{
+                            width: 125px;
+                            height: 200px;
+                            overflow: hidden;
+                            border-radius: 6px;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .storyName{
+                            position: absolute;
+                            bottom: 15px;
+                            font-size: 14px;
+                            color: $white;
+                            font-weight: 600;
+                            left: 20px;
+                        }
+                    }
+                }
+                & .shareThoughts{
+                    background-color: $white;
+                    padding: 20px;
+                    border-radius: 6px;
+                    & .who{
+                        width: 80px;
+                        height: 80px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 4px solid $white;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .textareaclass{
+                        border-color: $theme2;
+                        background-color: $theme2;
+                        font-size: 12px;
+                        height: 60px;
+                        padding-left: 20px;
+                        padding: 8px 15px;
+                        width: 100%;
+                        border-radius: 6px;
+                        &:focus{
+                            outline: unset;
+                        }
+                    }
+                    & .photo{
+                        background-color: $theme2;
+                        padding: 8px 15px;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        &:hover{
+                            color: darken($color: $green, $amount: 10);
+                        }
+                        & img{
+                            height: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                & .review{
+                    background-color: $white;
+                    padding: 20px;
+                    border-radius: 6px;
+                    & .userBlog{
+                        & .user{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .userName{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $black;
+                        }
+                        & .Hour{
+                            font-size: 12px;
+                            color: $black;
+                        }
+                    }
+                    & .menu{
+                        & img{
+                            width: 20px;
+                        }
+                    }
+                    & .description{
+                        font-size: 14px;
+                        color: $gray-500;
+                    }
+                    & .seeAnchor{
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $theme1;
+                    }
+                    & .imgg{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: 6px;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .imggg{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        border-radius: 6px;
+                        z-index: 0;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .fadee{
+                        background-color: rgba(0,0,0,0.5);
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 20px;
+                        line-height: 100%;
+                        font-weight: 700;
+                        border-radius: 6px;
+                        inset: 0;
+                        margin: auto;
+                    }
+                }
+            }
+        }
     }
-
+    .modalFade{
+        & .modalDialog{
+            & .modalContent{
+                & .modalHeader{
+                    padding: 20px;
+                    & .modalTitle{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $black;
+                    }
+                }
+                & .modalBody{
+                    padding: 20px;
+                    & .textareaclass{
+                        border-color: $theme2;
+                        background-color: $theme2;
+                        font-size: 12px;
+                        height: 60px;
+                        padding-left: 20px;
+                        padding: 8px 15px;
+                        width: 100%;
+                        border-radius: 6px;
+                        &:focus{
+                            outline: unset;
+                        }
+                    }
+                    & .uploadTxt{
+                        font-size: 16px;
+                        color: $black;
+                        margin-bottom: 8px;
+                    }
+                    & .box{
+                        width: 100%;
+                        height: 200px;
+                        border: 1px dashed $black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & .gallary{
+                            & img{
+                                height: 20px;
+                            }
+                        }
+                        & .txt{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                & .modalFooter{
+                    padding: 20px;
+                    & .closeBtn{
+                        border: 1px solid $red;
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $red;
+                        background-color: lighten($color: $red, $amount: 50);
+                    }
+                    & .saveBtn{
+                        border: 1px solid $green;
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $green;
+                        background-color: lighten($color: $green, $amount: 50);
+                    }
+                }
+            }
+        }
+    }
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
 

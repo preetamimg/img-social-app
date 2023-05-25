@@ -100,60 +100,378 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
         <link rel="stylesheet" href="assets/libs/node_modules/swiper/swiper-bundle.min.css" />
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
-        <main class="container-fluid">
-            <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill bodyScrollPart" data-page-name="landing">
-                    <nav class="topNavbar">
-                    </nav>
+        <main class="container-fluid 100-vh">
+            <div class="row mainInner h-100">
+                <div class="col-12 px-0 flex-fill bodyScrollPart h-100" data-page-name="landing">
+                    <!-- <nav class="topNavbar">
+                    </nav> -->
                     <!-- Hero Section Start -->
-                    <div class="container-fluid heroSection px-0">
+                    <div class="container-fluid dashBoardFluid px-0">
+                        <div class="container dashboardContainer h-100">
+                            <div class="row pt-4">
+                                <div class="col-3 sticky-top top-0 h-100 px-0">
+                                    <div class="row">
+                                        <div class="col-12 position-relative">
+                                            <div class="coverImage">
+                                                <img src="assets/img/profilebg.jpg" alt="">
+                                            </div>
+                                            <div class="profile">
+                                                <img src="assets/img/profile.jpg" alt="">
+                                            </div>
+                                            <div class="row mx-0">
+                                                <div class="col-12 px-0">
+                                                    <div class="profileBar pt-5">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="profileName text-center">Sam Lanson</div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="profileDesignation text-center">Web Developer at Webestica</div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="profilePara text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, enim tempore dolore quasi et inventore!</div>
+                                                            </div>
+                                                            <div class="col-12 mt-4">
+                                                                <div class="row border-bottom pb-4">
+                                                                    <div class="col-4 text-center border-end">
+                                                                        <div class="postCount">256</div>
+                                                                        <div class="post">Post</div>
+                                                                    </div> 
+                                                                    <div class="col-4 text-center border-end">
+                                                                        <div class="postCount">2.5K</div>
+                                                                        <div class="post">Followers</div>
+                                                                    </div> 
+                                                                    <div class="col-4 text-center">
+                                                                        <div class="postCount">356</div>
+                                                                        <div class="post">Following</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 mt-3">
+                                                                <ul class="list-unstyled mb-0 border-bottom pb-3">
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/homeicon.svg" alt="">Feed</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/profileicon.svg" alt="">Connections</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/latestnewsicon.svg" alt="">Latest News</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/eventicon.svg" alt="">Events</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/gropuchaticon.svg" alt="">Groups</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/notificationicon.svg" alt="">Notifications</a></li>
+                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/settingicon.svg" alt="">Settings</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-12 py-3">
+                                                                <a href="javascript:;" class="text-center d-block viewMore">View Profile</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex flex-column h-100 overflow-auto">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="addstory">
+                                                <div class="row h-100">
+                                                    <div class="col-12 d-flex flex-column align-items-center justify-content-end h-100 pb-3">
+                                                        <a href="javascript::" class="add"><img src="assets/img/plusstory.svg" alt=""></a>
+                                                        <div class="addText pt-1">Add Story</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-9 ps-0 d-flex align-items-center">
+                                            <div class="row align-items-center carousel">
+                                                <div class="col-auto">
+                                                    <a href="assets/img/profile.jpg" class="position-relative swiperSlide glightbox">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req1.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                        <!-- <a href="" class="">
+                                                            <img src="assets//img/profile.jpg" alt="image" />
+                                                        </a> -->
+                                                    </a>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req2.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req3.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req4.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req5.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req6.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto ps-0">
+                                                    <div class="position-relative swiperSlide">
+                                                        <div class="stories">
+                                                            <img src="assets/img/req7.jpg" alt="">
+                                                        </div>
+                                                        <div class="storyName">Victor Extrior</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="row py-4">
+                                        <div class="col-12">
+                                            <div class="shareThoughts">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="who">
+                                                            <img src="assets/img/user1.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <textarea name="" class="textareaclass" id="" cols="30" rows="10" placeholder="Share your thoughts"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-3 pb-1">
+                                                    <div class="col-12">
+                                                        <a href="javascript::" class="photo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            <img src="assets/img/gallary.svg" alt="">Photo
+                                                        </a>
+                                                        <a href="javascript::" class="photo ms-2"data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                            <img src="assets/img/camera.svg" alt="">Video
+                                                        </a> 
+                                                        <a href="javascript::" class="photo ms-2">
+                                                            <img src="assets/img/calander.svg" alt="">Event
+                                                        </a>
+                                                        <a href="javascript::" class="photo ms-2">
+                                                            <img src="assets/img/smile.svg" alt="">Feeling/Activity
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="review">
+                                                <div class="row align-items-center">
+                                                    <div class="col">
+                                                        <div class="userBlog row align-items-center">
+                                                            <div class="col-auto">
+                                                                <div class="user">
+                                                                    <img src="assets/img/user2.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col ps-0">
+                                                                <div class="userName">Anthony Daugloi</div>
+                                                                <div class="Hour">2 hours ago</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:;" class="col-auto">
+                                                        <div class="menu">
+                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="row py-2">
+                                                    <div class="col-12 description">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vero repellendus quae quis inventore rerum iste cum ducimus, tempora similique molestias fuga, omnis dolor provident. <a href="javascript:;" class="seeAnchor">See more</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row gx-2">
+                                                    <div class="col-6">
+                                                        <div class="imgg">
+                                                            <img src="assets/img/box1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="imgg">
+                                                            <img src="assets/img/box2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 gx-2">
+                                                    <div class="col-4">
+                                                        <div class="imgg">
+                                                            <img src="assets/img/box3.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="imgg">
+                                                            <img src="assets/img/box4.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 box-container three-cols">
+                                                        <div class="overflow-hidden position-relative box show" style="transition-delay: 0s;">
+                                                            <div class="inner overflow-hidden">
+                                                                <a href="assets/img/box4.jpg" class=" imggg">
+                                                                    <img src="assets/img/box4.jpg" alt="image">
+                                                                </a>
+                                                                <div class="fadee glightbox">2</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row py-2">
+                                        <div class="col-12">
+                                            <div class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">Slide 1</div>
+                                                    <div class="swiper-slide">Slide 2</div>
+                                                    <div class="swiper-slide">Slide 3</div>
+                                                    <div class="swiper-slide">Slide 4</div>
+                                                    <div class="swiper-slide">Slide 5</div>
+                                                    <div class="swiper-slide">Slide 6</div>
+                                                    <div class="swiper-slide">Slide 7</div>
+                                                    <div class="swiper-slide">Slide 8</div>
+                                                    <div class="swiper-slide">Slide 9</div>
+                                                </div>
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 sticky-top top-0 h-100">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, obcaecati odit. Optio quisquam odio aliquam aperiam. Beatae natus, maxime nam asperiores sit veniam officiis, voluptates consequatur odio doloribus perferendis tempora vel molestiae aut ipsa labore fugit cupiditate aliquid nisi, itaque eius recusandae. Natus, dolores nulla dolor magnam rem eveniet provident corporis dolorem dicta necessitatibus nesciunt modi incidunt. Quasi dignissimos porro, earum tempore voluptatem, ad, exercitationem corrupti quis possimus officiis assumenda delectus? Accusantium iusto quisquam veritatis quia dolores laboriosam modi, harum, a possimus provident reiciendis quos exercitationem rem necessitatibus atque voluptas tenetur repudiandae maiores, recusandae quas error commodi tempora laborum quae.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     
                     
                     <!-- footer Start -->
-                    <footer>
-                    </footer>
+                    <!-- <footer>
+                    </footer> -->
                     <!-- footer End -->
 
                 </div>
             </div>
+    
+            <!-- Modal -->
+            <div class="modal fade modalFade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modalDialog">
+                <div class="modal-content modalContent">
+                    <div class="modal-header modalHeader">
+                    <div class="modal-title modalTitle" id="exampleModalLabel">Add post photo</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modalBody">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="pic">
+                                    <img src="assets/img/user1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col">  
+                                <textarea name="" class="textareaclass" id="" cols="30" rows="10" placeholder="Share your thoughts"></textarea>
+                            </div>
+                        </div>
+                        <div class="row py-4">
+                            <div class="col-12 uploadTxt">Upload your attatchment</div>
+                            <div class="col-12">
+                                <input type="file" class="d-none" id="aa">
+                                <label for="aa" class="box d-flex flex-column">
+                                    <div class="gallary mb-3">
+                                        <img class="" src="assets/img/gallary.svg" alt="">
+                                    </div>
+                                    <div class="txt">Drag here or click to upload photo</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer modalFooter">
+                    <button type="button" class="btn closeBtn" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn saveBtn">Post</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal fade modalFade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modalDialog">
+                <div class="modal-content modalContent">
+                    <div class="modal-header modalHeader">
+                    <div class="modal-title modalTitle" id="exampleModalLabel">Add post vedio</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modalBody">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="pic">
+                                    <img src="assets/img/user1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col">  
+                                <textarea name="" class="textareaclass" id="" cols="30" rows="10" placeholder="Share your thoughts"></textarea>
+                            </div>
+                        </div>
+                        <div class="row py-4">
+                            <div class="col-12 uploadTxt">Upload your attatchment</div>
+                            <div class="col-12">
+                                <input type="file" class="d-none" id="aa">
+                                <label for="aa" class="box d-flex flex-column">
+                                    <div class="gallary mb-3">
+                                        <img class="" src="assets/img/camera.svg" alt="">
+                                    </div>
+                                    <div class="txt">Drag here or click to upload photo</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer modalFooter">
+                    <button type="button" class="btn closeBtn" data-bs-dismiss="modal">Live vedio</button>
+                    <button type="button" class="btn saveBtn">Post</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </main>
 
-
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.hero-swiper', {
-                // Optional parameters
-                // direction: 'vertical',
-                loop: true,
-                autoplay:true,
-                effect: "fade",
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-
-                // Navigation arrows
-                // navigation: {
-                //     nextEl: '.swiper-button-next',
-                //     prevEl: '.swiper-button-prev',
-                // },
-                navigation: false,
-
-                // And if we need scrollbar
-                scrollbar:false,
-                // scrollbar: {
-                //     el: '.swiper-scrollbar',
-                // },
-            });
+        <script>  
+        var swiper = new Swiper(".story", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+            el: "false",
+            clickable: true,
+            },
+        });
         </script>
         <script>
             $('.bodyScrollPart').scroll(function () {
@@ -163,6 +481,12 @@
                 } else {
                     $(".topNavbar").addClass("nav-active");
                 }
+            });
+        </script>
+        <script>
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
             });
         </script>
     </body>
