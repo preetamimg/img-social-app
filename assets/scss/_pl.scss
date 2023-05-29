@@ -6,7 +6,7 @@
             & .dashboardContainer{
                 & .coverImage{
                     width: 100%;
-                    height: 60px;
+                    height: 130px;
                     overflow: hidden;
                     border-radius: 6px 6px  0  0;
                     & img{
@@ -48,6 +48,11 @@
                         color: $gray-600;
                         font-size: 16px;
                         margin-top: 15px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                     & .postCount{
                         font-size: 15px;
@@ -262,6 +267,138 @@
                         border-radius: 6px;
                         inset: 0;
                         margin: auto;
+                    }
+                }
+                & .slide{
+                    border-radius: 6px;
+                    height: 100%;
+                    // border: 1px solid;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    & .slideTop{
+                        & img{
+                            height: 100px;
+                            width: 100%;
+                            border-radius: 6px;
+                        }
+                    }
+                    & .mid{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 90px;
+                        width: 60px;
+                        height: 60px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 4px solid $white;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .slideBottom{
+                        padding: 40px 20px 10px 20px;
+                        & .slideName{
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        & .slideId{
+                            font-size: 13px;
+                        }
+                        & .liveBtn{
+                            background-color: $red;
+                            border-radius: 6px;
+                            border: none;
+                            color: $white;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                & .friendRequest{
+                    background-color: $white;
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    padding: 20px;
+                    border-radius: 6px;
+                    & .friendRequestHead{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    & .friendRequestlink{
+                        font-size: 14px;
+                    }
+                    & .sender{
+                        width: 60px;
+                        height: 60px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .senderName{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    & .senderFriends{
+                        font-size: 13px;
+                        color: $gray-500;
+                    }
+                    & .confirmBtn{
+                        background-color: $blue;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $white;
+                        padding: 10px 25px;
+                    }
+                    & .delBtn{
+                        background-color: $gray-200;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $black;
+                        padding: 10px 25px;
+                    }
+                }
+                & .events{
+                    background-color: $white;
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    padding: 20px;
+                    border-radius: 6px;
+                    & .eventsHead{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    & .eventsLink{
+                        font-size: 14px;
+                    }
+                    & .eventHappened{
+                        border-radius: 6px;
+                        & .eventMonth{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $black;
+                        }
+                        & .eventDay{
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                    }
+                    & .eventName{
+
+                    }
+                    & .eventDiscription{
+
                     }
                 }
             }
