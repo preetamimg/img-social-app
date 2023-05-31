@@ -103,17 +103,83 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
     </head>
-    <body>
-        <main class="container-fluid 100-vh">
+    <body class="vh-100 overflow-hidden">
+        <main class="container-fluid h-100">
             <div class="row mainInner h-100">
-                <div class="col-12 px-0 flex-fill bodyScrollPart h-100" data-page-name="landing">
-                    <!-- <nav class="topNavbar">
-                    </nav> -->
+                <div class="col-12 px-0 h-100 overflow-hidden " data-page-name="landing">
+                    <nav class="topNavbar">
+                        <div class="row header align-items-center">
+                            <div class="col-auto">
+                                <div class="logo">
+                                    <img src="assets/img/feather.svg" alt="">
+                                    Sociala.
+                                </div>
+                            </div>
+                            <div class="col d-xl-flex d-none d-flex align-items-center justify-content-center">
+                                <div class="input position-relative">
+                                <input type="text" class="form-control shadow-none rounded-pill inp" name="" id="" placeholder="Start typing to search">
+                                <img src="assets/img/search.svg" alt="">
+                                </div>
+                                <div class="linkss d-flex align-items-center gap-2">
+                                    <a href="javascript:;" class=" ps-2">
+                                        <div class="home active">
+                                            <img src="assets/img/home.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="">
+                                        <div class="home">
+                                            <img src="assets/img/Energy.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="">
+                                        <div class="home">
+                                            <img src="assets/img/Video Camera.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="">
+                                        <div class="home">
+                                            <img src="assets/img/User.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="javascript:;" class="">
+                                        <div class="home">
+                                            <img src="assets/img/bag (2).svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-auto col d-flex align-items-center justify-content-end gap-4">
+                                <a href="javascript:;">
+                                    <div class="endLinks position-relative">
+                                        <img class="note" src="assets/img/notifications.svg" alt=""> 
+                                        <span class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">
+                                        2
+                                        <span class="visually-hidden">unread messages</span>
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="endLinks">
+                                        <img src="assets/img/Chat Bubble.svg" alt="">
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="endLinks">
+                                        <img src="assets/img/Setting.svg" alt="">
+                                    </div>
+                                </a>
+                                <a href="javascript:;">
+                                    <div class="endLinks userr proPic">
+                                        <img src="assets/img/user2.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
                     <!-- Hero Section Start -->
-                    <div class="container-fluid dashBoardFluid px-0">
-                        <div class="container dashboardContainer h-100">
-                            <div class="row pt-4">
-                                <div class="col-3 sticky-top top-0 h-100 px-0">
+                    <div class="container-fluid dashBoardFluid px-0 h-100">
+                        <div class="container dashboardContainer notificationnn h-100">
+                            <div class="row pt-2 pb-5 h-100">
+                                <div class="col-3 h-100 overflow-y-auto colstart">
                                     <div class="row">
                                         <div class="col-12 position-relative">
                                             <div class="coverImage">
@@ -155,10 +221,10 @@
                                                             <div class="col-12 mt-3">
                                                                 <ul class="list-unstyled mb-0 border-bottom pb-3">
                                                                     <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/homeicon.svg" alt="">Feed</a></li>
-                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/profileicon.svg" alt="">Connections</a></li>
+                                                                    <li class="socialLi"><a href="connections.html" class="socialLinks"><img src="assets/img/profileicon.svg" alt="">Connections</a></li>
                                                                     <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/latestnewsicon.svg" alt="">Latest News</a></li>
                                                                     <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/eventicon.svg" alt="">Events</a></li>
-                                                                    <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/gropuchaticon.svg" alt="">Groups</a></li>
+                                                                    <li class="socialLi"><a href="group.html" class="socialLinks"><img src="assets/img/gropuchaticon.svg" alt="">Groups</a></li>
                                                                     <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/notificationicon.svg" alt="">Notifications</a></li>
                                                                     <li class="socialLi"><a href="javascript:;" class="socialLinks"><img src="assets/img/settingicon.svg" alt="">Settings</a></li>
                                                                 </ul>
@@ -173,9 +239,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex flex-column h-100 overflow-auto">
-                                    <div class="row">
-                                        <div class="col-3">
+                                <div class="col-xl-6 col-12 d-flex flex-column h-100 overflow-y-auto">
+                                    <div class="row mx-0">
+                                        <div class="col-3 ps-0">
                                             <div class="addstory">
                                                 <div class="row h-100">
                                                     <div class="col-12 d-flex flex-column align-items-center justify-content-end h-100 pb-3">
@@ -188,7 +254,7 @@
                                         <div class="col-9 ps-0 d-flex align-items-center">
                                             <div class="row align-items-center carousel">
                                                 <div class="col-auto">
-                                                    <a href="assets/img/profile.jpg" class="position-relative swiperSlide glightbox">
+                                                    <a href="assets/img/req1.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req1.jpg" alt="">
                                                         </div>
@@ -199,52 +265,52 @@
                                                     </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req2.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req2.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req3.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req3.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req4.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req4.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req5.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req5.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req6.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req6.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-auto ps-0">
-                                                    <div class="position-relative swiperSlide">
+                                                    <a href="assets/img/req7.jpg" class="position-relative swiperSlide glightbox">
                                                         <div class="stories">
                                                             <img src="assets/img/req7.jpg" alt="">
                                                         </div>
                                                         <div class="storyName">Victor Extrior</div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -263,7 +329,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="row pt-3 pb-1">
-                                                    <div class="col-12">
+                                                    <div class="col-12 overflow-auto text-nowrap">
                                                         <a href="javascript::" class="photo" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                             <img src="assets/img/gallary.svg" alt="">Photo
                                                         </a>
@@ -298,11 +364,19 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="javascript:;" class="col-auto">
-                                                        <div class="menu">
+                                                    <div class="col-auto">
+                                                        <button class="menu"  data-bs-toggle="dropdown" aria-expanded="false">
                                                             <img src="assets/img/menuHorizontal.svg" alt="">
-                                                        </div>
-                                                    </a>
+                                                            <div class="dropdown drop"> 
+                                                                <ul class="dropdown-menu dropMenu">
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/save.svg" alt="">Save post</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/unfollow.svg" alt="">Unfollow</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/bane.svg" alt="">Hide</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/flag.svg" alt="">Report Post</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                                 <div class="row py-2">
                                                     <div class="col-12 description">
@@ -311,34 +385,42 @@
                                                 </div>
                                                 <div class="row gx-2">
                                                     <div class="col-6">
-                                                        <div class="imgg">
-                                                            <img src="assets/img/box1.jpg" alt="">
-                                                        </div>
+                                                        <a href="assets/img/box1.jpg" class="glightbox2">
+                                                            <div class="imgg">
+                                                                <img src="assets/img/box1.jpg" alt="">
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div class="col-6">
-                                                        <div class="imgg">
-                                                            <img src="assets/img/box2.jpg" alt="">
-                                                        </div>
+                                                        <a href="assets/img/box2.jpg" class="glightbox2">
+                                                            <div class="imgg">
+                                                                <img src="assets/img/box2.jpg" alt="">
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="row py-2 gx-2">
                                                     <div class="col-4">
-                                                        <div class="imgg">
-                                                            <img src="assets/img/box3.jpg" alt="">
-                                                        </div>
+                                                        <a href="assets/img/box3.jpg" class="glightbox2">
+                                                            <div class="imgg">
+                                                                <img src="assets/img/box3.jpg" alt="">
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div class="col-4">
-                                                        <div class="imgg">
-                                                            <img src="assets/img/box4.jpg" alt="">
-                                                        </div>
+                                                        <a href="assets/img/box4.jpg" class="glightbox2">
+                                                            <div class="imgg">
+                                                                <img src="assets/img/box4.jpg" alt="">
+                                                            </div>
+                                                        </a>
                                                     </div>
                                                     <div class="col-4 box-container three-cols">
                                                         <div class="overflow-hidden position-relative box show" style="transition-delay: 0s;">
                                                             <div class="inner overflow-hidden">
-                                                                <a href="assets/img/box4.jpg" class=" imggg">
-                                                                    <img src="assets/img/box4.jpg" alt="image">
+                                                                <a href="assets/img/box4.jpg" class=" imggg glightbox2">
+                                                                    <img src="assets/img/box4.jpg" alt="image" class="">
+                                                                    <div class="fadee">+2</div>
                                                                 </a>
-                                                                <div class="fadee glightbox">+2</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -501,15 +583,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <div class="postMenu">
-                                                            <img src="assets/img/menuHorizontal.svg" alt="">
-                                                        </div>
+                                                        <button class="postMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <img src="assets/img/menuHorizontal.svg" alt=""><div class="dropdown drop"> 
+                                                                <ul class="dropdown-menu dropMenu">
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/save.svg" alt="">Save post</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/unfollow.svg" alt="">Unfollow</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/bane.svg" alt="">Hide</a></li>
+                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/flag.svg" alt="">Report Post</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </button>
                                                     </div>
                                                 </div>
                                                 <div class="row py-2">
+                                                    <div class="postImg">
                                                     <div class="col-12 postPara">I'm thrilled to share that I've completed a graduate certificate course in project management with the president's honor roll.</div>
-                                                    <div class="col-12 py-2">
-                                                        <div class="postImg">
+                                                    <div class="col-12 py-2 postImgParent">
                                                             <img src="assets/img/postimg.jpg" alt="">
                                                         </div>
                                                     </div>
@@ -529,7 +618,7 @@
                                                                     <span>Comments(56)</span>
                                                                 </div>
                                                             </a>
-                                                            <a href="javascript:;" class="col-auto">
+                                                            <a href="javascript:;" class="col-auto d-sm-block d-none">
                                                                 <div class="shareBox d-flex align-items-center">
                                                                     <div class="like ms-4">
                                                                     <img src="assets/img/share.svg" alt="">
@@ -561,14 +650,267 @@
                                                                     <img src="assets/img/user4.png" alt="">
                                                                 </div>
                                                             </div>
-                                                            <div class="col">
+                                                            <div class="col ps-0">
                                                                 <div class="userBox">
                                                                     <div class="row">
                                                                         <a href="javascript:;" class="col commentUserName"> Frances Guerrero </a>
                                                                         <div class="col-auto commentUserhr">5hr</div>
+                                                                        <div class="col-12 reply py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis facilis, reprehenderit odio excepturi soluta magnam vitae error ad eveniet dolorem.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="subscribeBox">
+                                                                            <span><a href="javascript:;">Like(4)</a></span>
+                                                                            <span><a href="javascript:;">.reply</a></span>
+                                                                            <span><a href="javascript:;">.View 5 replies</a></span>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                        </div> 
+                                                        <div class="row align-items-center py-2 ps-5">
+                                                            <div class="col-auto">
+                                                                <div class="commentUser">
+                                                                    <img src="assets/img/user6.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col ps-0">
+                                                                <div class="userBox">
+                                                                    <div class="row">
+                                                                        <a href="javascript:;" class="col commentUserName"> Adityaa Guerrero </a>
+                                                                        <div class="col-auto commentUserhr">2hr</div>
+                                                                        <div class="col-12 reply py-2">Lorem ipsum dolreprehenderit odio excepturi soluta magnam vitae error ad eveniet dolorem.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="subscribeBox">
+                                                                            <span><a href="javascript:;">Like</a></span>
+                                                                            <span><a href="javascript:;">.reply</a></span>
+                                                                            <!-- <span><a href="javascript:;">.View 5 replies</a></span> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center py-2 ps-5">
+                                                            <div class="col-auto">
+                                                                <div class="commentUser">
+                                                                    <img src="assets/img/user1.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col ps-0">
+                                                                <div class="userBox">
+                                                                    <div class="row">
+                                                                        <a href="javascript:;" class="col commentUserName"> kalaata Guerrero </a>
+                                                                        <div class="col-auto commentUserhr">7hr</div>
+                                                                        <div class="col-12 reply py-2">Lorem ipsum dolreprehenderit odio excepturi soluta magnam vitae error ad eveniet dolorem.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="subscribeBox">
+                                                                            <span><a href="javascript:;">Like</a></span>
+                                                                            <span><a href="javascript:;">.reply</a></span>
+                                                                            <!-- <span><a href="javascript:;">.View 5 replies</a></span> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row ps-5">
+                                                            <div class="col-12"><a href="javascript::" class="loadReplies">...Load more replies</a></div>
+                                                        </div> <div class="row align-items-center py-2">
+                                                            <div class="col-auto">
+                                                                <div class="commentUser">
+                                                                    <img src="assets/img/user3.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col ps-0">
+                                                                <div class="userBox">
+                                                                    <div class="row">
+                                                                        <a href="javascript:;" class="col commentUserName"> kalaata Guerrero </a>
+                                                                        <div class="col-auto commentUserhr">7hr</div>
+                                                                        <div class="col-12 reply py-2">Lorem ipsum dolreprehenderit odio excepturi soluta magnam vitae error ad eveniet dolorem.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="subscribeBox">
+                                                                            <span><a href="javascript:;">Like</a></span>
+                                                                            <span><a href="javascript:;">.reply</a></span>
+                                                                            <!-- <span><a href="javascript:;">.View 5 replies</a></span> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12"><a href="javascript::" class="loadReplies">...Load more comments</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row py-4">
+                                        <div class="col-12">
+                                            <div class="propleuKnowBox">
+                                                <div class="row align-items-center">
+                                                    <div class="col propleuKnowBoxHhead">People you may know</div>
+                                                    <div class="col-auto"><button class="propleuKnowBoxBtn">See all</button></div>
+                                                </div>
+                                                <div class="row py-3">
+                                                    <div class="col-12">
+                                                        <div class="swiper slides">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user7.jpg" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user8.jpg" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user9.jpg" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user10.jpg" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user6.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user5.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user4.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="cards">
+                                                                                <div class="row py-3">
+                                                                                    <div class="col-12 text-center">
+                                                                                        <div class="carddImg m-auto">
+                                                                                            <img src="assets/img/user6.png" alt="">
+                                                                                        </div>
+                                                                                        <div class="carddName">Larry Cardward</div>
+                                                                                        <div class="connections">33 mutual<br>connections</div>
+                                                                                        <button class="addBtn">Add friends</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <div class="swiper-pagination"></div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -576,7 +918,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-3 sticky-top top-0 h-100">
+                                <div class="col-3 h-100 overflow-y-auto colend">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="friendRequest">
@@ -705,6 +1047,75 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row pb-4">
+                                        <div class="col-12">
+                                            <div class="friendRequest">
+                                                <div class="row align-items-center border-bottom pb-3">
+                                                    <div class="col friendRequestHead">Who to follow you</div>
+                                                    <div class="col-auto"><a href="javascript:;" class="friendRequestlink">See all</a></div>
+                                                </div>
+                                                <div class="row pt-2 pb-2 align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="sender">
+                                                            <img src="assets/img/user6.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-0">
+                                                        <div class="row">
+                                                            <div class="col-12 senderName">Anthony Daugloi</div>
+                                                            <div class="col-12 senderFriends">12 mutual friends</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:;" class="col-auto">
+                                                        <div class="plus">
+                                                            <img src="assets/img/addmore.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="row pt-2 pb-2 align-items-center">
+                                                    <a href="javascript:;" class="col-auto">
+                                                        <div class="sender">
+                                                            <img src="assets/img/user5.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="col ps-0">
+                                                        <div class="row">
+                                                            <div class="col-12 senderName">Mohammad jayui</div>
+                                                            <div class="col-12 senderFriends">10 mutual friends</div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="javascript:;" class="col-auto">
+                                                        <div class="plus">
+                                                            <img src="assets/img/addmore.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="row pt-2 pb-2 align-items-center">
+                                                    <a href="javascript:;" class="col-auto">
+                                                        <div class="sender">
+                                                            <img src="assets/img/user4.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                    <div class="col ps-0">
+                                                        <div class="row">
+                                                            <div class="col-12 senderName">Mohammad jayui</div>
+                                                            <div class="col-12 senderFriends">10 mutual friends</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="plus">
+                                                            <img src="assets/img/addmore.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button class="viewBtn">View more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -722,7 +1133,7 @@
                 <div class="modal-content modalContent">
                     <div class="modal-header modalHeader">
                     <div class="modal-title modalTitle" id="exampleModalLabel">Add post photo</div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body modalBody">
                         <div class="row align-items-center">
@@ -819,10 +1230,12 @@
             });
         </script>
         <script>
-            var lightbox = GLightbox();
-            lightbox.on('open', (target) => {
-                console.log('lightbox opened');
-            });
+            var lightboxDescription = GLightbox({
+            selector: '.glightbox'
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
         </script>
         <script>
         var swiper = new Swiper(".mySlides", {
@@ -840,21 +1253,89 @@
                     el: ".swiper-pagination",
                     clickable: true,
                 },
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                },
                 breakpoints: {
-                    640: {
+                    0: {
                     slidesPerView: 2,
                     // spaceBetween: 20,
                     },
+                    576: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
                     768: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
+                    992: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
+                    1200: {
+                    slidesPerView: 3,
                     // spaceBetween: 40,
                     },
-                    1024: {
+                    1400: {
                     slidesPerView: 3,
                     // spaceBetween: 50,
                     },
                 },
                 });
-            </script>
+        </script>
+        <script>
+                var swiper = new Swiper(".slides", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: {
+                    slidesPerView: 1.5,
+                    // spaceBetween: 20,
+                    },
+                    576: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
+                    768: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
+                    992: {
+                    slidesPerView: 3,
+                    // spaceBetween: 20,
+                    },
+                    1200: {
+                    slidesPerView: 3,
+                    // spaceBetween: 40,
+                    },
+                    1400: {
+                    slidesPerView: 3,
+                    // spaceBetween: 50,
+                    },
+                },
+                });
+        </script>
+        <script>
+            let notification = document.querySelector('.notificationnn')
+            let user = document.querySelector('.proPic')
+            // console.log('notification')
+            let note = document.querySelector('.note')
+            note.addEventListener('click', ()=>{
+                notification.classList.toggle('show')
+            })
+            user.addEventListener('click', ()=>{
+                notification.classList.toggle('showw')
+            })
+        </script>
         </body>
 </html>

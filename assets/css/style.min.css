@@ -132,8 +132,7 @@ body .overflow-auto-hidden {
     scrollbar-color: #f6f7fa !important;
   }
   * > *::-webkit-scrollbar {
-    width: 0.3em;
-    height: 0.3em;
+    display: none !important;
   }
   * > *::-webkit-scrollbar-track {
     background: transparent;
@@ -160,6 +159,7 @@ body .overflow-auto-hidden {
 }
 .dashBoardFluid {
   background-color: #EFF2F6;
+  height: calc(100vh - 80px);
 }
 .dashBoardFluid .dashboardContainer .coverImage {
   width: 100%;
@@ -222,7 +222,7 @@ body .overflow-auto-hidden {
   color: #000;
 }
 .dashBoardFluid .dashboardContainer .profileBar .socialLi {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   align-items: center;
   display: flex;
 }
@@ -335,6 +335,7 @@ body .overflow-auto-hidden {
   border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
+  display: inline-block;
 }
 .dashBoardFluid .dashboardContainer .shareThoughts .photo:hover {
   color: #007732;
@@ -368,6 +369,19 @@ body .overflow-auto-hidden {
   font-size: 12px;
   color: #000;
 }
+.dashBoardFluid .dashboardContainer .review .menu {
+  border: none;
+  background-color: transparent;
+}
+.dashBoardFluid .dashboardContainer .review .menu .drop .dropMenu .dropItem {
+  font-size: 12px;
+  font-weight: 500;
+}
+.dashBoardFluid .dashboardContainer .review .menu .drop .dropMenu .dropItem img {
+  height: 15px;
+  filter: brightness(0);
+  margin-right: 5px;
+}
 .dashBoardFluid .dashboardContainer .review .menu img {
   width: 20px;
 }
@@ -398,6 +412,7 @@ body .overflow-auto-hidden {
   overflow: hidden;
   border-radius: 6px;
   z-index: 0;
+  display: block;
 }
 .dashBoardFluid .dashboardContainer .review .imggg img {
   width: 100%;
@@ -467,7 +482,6 @@ body .overflow-auto-hidden {
 }
 .dashBoardFluid .dashboardContainer .friendRequest {
   background-color: #fff;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 20px;
   border-radius: 6px;
 }
@@ -499,6 +513,18 @@ body .overflow-auto-hidden {
   font-size: 13px;
   color: #adb5bd;
 }
+.dashBoardFluid .dashboardContainer .friendRequest .plus {
+  background-color: #d0e0ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .plus img {
+  height: 10px;
+}
 .dashBoardFluid .dashboardContainer .friendRequest .confirmBtn {
   background-color: #377dff;
   border-radius: 20px;
@@ -517,9 +543,19 @@ body .overflow-auto-hidden {
   color: #000;
   padding: 5px 25px;
 }
+.dashBoardFluid .dashboardContainer .friendRequest .viewBtn {
+  background-color: #d0e0ff;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 5px;
+}
 .dashBoardFluid .dashboardContainer .events {
   background-color: #fff;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 20px;
   border-radius: 6px;
 }
@@ -577,6 +613,22 @@ body .overflow-auto-hidden {
   height: 100%;
   object-fit: cover;
 }
+.dashBoardFluid .dashboardContainer .myPost .postMenu {
+  border: none;
+  background-color: transparent;
+}
+.dashBoardFluid .dashboardContainer .myPost .postMenu img {
+  width: 20px;
+}
+.dashBoardFluid .dashboardContainer .myPost .postMenu .drop .dropMenu .dropItem {
+  font-size: 12px;
+  font-weight: 500;
+}
+.dashBoardFluid .dashboardContainer .myPost .postMenu .drop .dropMenu .dropItem img {
+  height: 15px;
+  filter: brightness(0);
+  margin-right: 5px;
+}
 .dashBoardFluid .dashboardContainer .myPost .activeTime {
   font-size: 12px;
   color: #ced4da;
@@ -594,16 +646,15 @@ body .overflow-auto-hidden {
   font-size: 13px;
   color: #6c757d;
 }
-.dashBoardFluid .dashboardContainer .myPost .postImg {
+.dashBoardFluid .dashboardContainer .myPost .postImgParent {
   width: 100%;
-  height: 300px;
   overflow: hidden;
-  border-radius: 6px;
 }
-.dashBoardFluid .dashboardContainer .myPost .postImg img {
+.dashBoardFluid .dashboardContainer .myPost .postImgParent img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 6px;
 }
 .dashBoardFluid .dashboardContainer .myPost .likeBox.active {
   color: #377dff;
@@ -656,7 +707,7 @@ body .overflow-auto-hidden {
   font-size: 13px;
   padding-left: 15px;
   color: #000;
-  background-color: #dee2e6;
+  background-color: #f8f9fa;
 }
 .dashBoardFluid .dashboardContainer .myPost .send {
   position: absolute;
@@ -678,9 +729,473 @@ body .overflow-auto-hidden {
   object-fit: cover;
 }
 .dashBoardFluid .dashboardContainer .userBox {
-  background-color: #dee2e6;
+  background-color: #f8f9fa;
   border-radius: 6px;
   padding: 10px 10px;
+  padding-left: 15px;
+}
+.dashBoardFluid .dashboardContainer .userBox .commentUserName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .userBox .commentUserhr {
+  font-size: 14px;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .userBox .reply {
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dashBoardFluid .dashboardContainer .subscribeBox span {
+  font-size: 12px;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .subscribeBox span:first-child {
+  font-size: 12px;
+  color: #dee2e6;
+  margin-left: 5px;
+}
+.dashBoardFluid .dashboardContainer .subscribeBox span:last-child {
+  font-size: 12px;
+  color: #000;
+  margin-left: 5px;
+}
+.dashBoardFluid .dashboardContainer .loadReplies {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000 !important;
+}
+.dashBoardFluid .dashboardContainer .propleuKnowBox {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+}
+.dashBoardFluid .dashboardContainer .propleuKnowBox .propleuKnowBoxHhead {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .propleuKnowBox .propleuKnowBoxBtn {
+  background-color: #d0e0ff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  padding: 8px 16px;
+  border: none;
+}
+.dashBoardFluid .dashboardContainer .cards {
+  border: 1px solid #adb5bd;
+  border-radius: 6px;
+  padding: 5px;
+}
+.dashBoardFluid .dashboardContainer .cards .carddImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px dashed #377dff;
+}
+.dashBoardFluid .dashboardContainer .cards .carddImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dashBoardFluid .dashboardContainer .cards .carddName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.dashBoardFluid .dashboardContainer .cards .connections {
+  font-size: 13px;
+  color: #6c757d;
+}
+.dashBoardFluid .dashboardContainer .cards .addBtn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background-color: #d0e0ff;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 5px;
+}
+
+.topNavbar {
+  padding: 0 20px;
+}
+.topNavbar .header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.topNavbar .header .logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: #377dff;
+}
+.topNavbar .header .logo img {
+  height: 35px;
+}
+.topNavbar .header .input .inp {
+  font-size: 12px;
+  padding-left: 18px;
+  border-color: #ced4da;
+  height: 40px;
+  background-color: #f8f9fa;
+  width: 250px;
+}
+.topNavbar .header .input img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  height: 15px;
+  filter: brightness(0.7);
+}
+.topNavbar .header .linkss .home {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topNavbar .header .linkss .home img {
+  height: 20px;
+  filter: brightness(0.6);
+}
+.topNavbar .header .linkss .home.active {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d0e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topNavbar .header .linkss .home.active img {
+  height: 20px;
+  filter: brightness(1);
+}
+.topNavbar .header .endLinks.userr {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.topNavbar .header .endLinks.userr img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.topNavbar .header .endLinks img {
+  height: 25px;
+}
+
+.bodyBg {
+  background-color: #EAECF1;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar .gropuInp {
+  height: 50px;
+  border-color: #ced4da;
+  font-size: 13px;
+  padding-left: 20px;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar .searchImg {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #377dff;
+  padding: 13px 20px;
+  border-radius: 0 6px 6px 0;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar .searchImg img {
+  height: 20px;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar .order {
+  font-size: 13px;
+  color: #000;
+}
+.bodyBg .groupFluidBar .groupContainerBar .groupTopBar .formSelect {
+  border: none !important;
+  color: #000;
+  font-size: 13px;
+}
+.bodyBg .groupFluid {
+  background-color: #EAECF1;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd {
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .bg {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .profile {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 50px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .groupName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .des {
+  font-size: 13px;
+  color: #adb5bd;
+  margin-top: 5px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos1 {
+  position: absolute;
+  top: 25px;
+  left: 80px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos2 {
+  top: 25px;
+  left: 100px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos3 {
+  top: 25px;
+  left: 120px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos4 {
+  top: 25px;
+  left: 140px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos5 {
+  background-color: #9dbfff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25px;
+  left: 155px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass.pos5 img {
+  width: 12px;
+  height: 12px;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .minClass img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .number {
+  font-size: 14px;
+  color: #000;
+}
+.bodyBg .groupFluid .groupContainer .groupCarrd .numberName {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+
+.groupFluidHorizontal .groupContainerHorizontal .bg {
+  width: 100px;
+  height: 150px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .bg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .pro {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 38px;
+  left: 70px;
+  border: 5px solid #fff;
+}
+.groupFluidHorizontal .groupContainerHorizontal .pro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.groupFluidHorizontal .groupContainerHorizontal .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.groupFluidHorizontal .groupContainerHorizontal .sub {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos1 {
+  position: absolute;
+  top: -22px;
+  left: 80px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos2 {
+  top: -22px;
+  left: 100px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos3 {
+  top: -22px;
+  left: 120px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos4 {
+  top: -22px;
+  left: 140px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos5 {
+  background-color: #9dbfff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -22px;
+  left: 155px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass.pos5 img {
+  width: 12px;
+  height: 12px;
+}
+.groupFluidHorizontal .groupContainerHorizontal .minClass img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.groupFluidHorizontal .groupContainerHorizontal .numberss {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.connectionsFluid {
+  background-color: #EFF2F6;
+}
+.connectionsFluid .connectionsContainer .bg {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.connectionsFluid .connectionsContainer .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile {
+  background-color: #fff;
+  border-radius: 6px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .proBox {
+  padding: 10px 20px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .proBox .user {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: -60px;
+  border: 5px dashed #377dff;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .proBox .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .proBox .userName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .proBox .userCollection {
+  font-size: 13px;
+  color: #adb5bd;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .btns {
+  padding: 15px 20px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .btns .editBtn {
+  background-color: transparent;
+  border: none;
+  background-color: #ffd1d6;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .btns .editBtn img {
+  margin-right: 5px;
+  height: 15px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .btns .menuBtn {
+  background-color: #e9ecef;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 6px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .btns .menuBtn img {
+  width: 14px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .des {
+  padding: 10px 20px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .des span {
+  font-size: 14px;
+  color: #000;
+  margin-right: 10px;
+}
+.connectionsFluid .connectionsContainer .connectionsProfile .des span img {
+  filter: brightness(0.6);
+  height: 16px;
+  margin-right: 6px;
+  margin-top: -5px;
 }
 .modalFade .modalDialog .modalContent .modalHeader {
   padding: 20px;
@@ -745,4 +1260,70 @@ body .overflow-auto-hidden {
   color: #00aa47;
   background-color: #aaffce;
   border-radius: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .dashBoardFluid .dashboardContainer.notificationnn .colstart {
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+    transform: translateX(-400px);
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn .colend {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn.show .colend {
+    transform: translateX(0);
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn.showw .colstart {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 991.98px) {
+  .dashBoardFluid .dashboardContainer.notificationnn.show .colend {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn:not(.show) .colend {
+    transform: translateX(100%);
+  }
+}
+@media (max-width: 767.98px) {
+  .dashBoardFluid .dashboardContainer.notificationnn.show .colend {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn:not(.show) .colend {
+    transform: translateX(100%);
+  }
+}
+@media (max-width: 575.98px) {
+  .dashBoardFluid .dashboardContainer.notificationnn.show .colend {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    width: 350px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+  }
+  .dashBoardFluid .dashboardContainer.notificationnn:not(.show) .colend {
+    transform: translateX(100%);
+  }
 }/*# sourceMappingURL=style.min.css.map */

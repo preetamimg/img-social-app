@@ -196,8 +196,9 @@
       scrollbar-color: lighten($theme2, 2) !important;
 
       &::-webkit-scrollbar {
-        width: .3em;
-        height: .3em;
+        display: none !important;
+        // width: .3em;
+        // height: .3em;
       }
 
       &::-webkit-scrollbar-track {
