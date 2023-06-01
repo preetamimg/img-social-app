@@ -606,9 +606,10 @@
                                                         <div class="row align-items-center">
                                                             <a href="javascript:;" class="col d-flex align-items-center">
                                                                 <div class="likeBox active  d-flex align-items-center">
-                                                                    <div class="like">
-                                                                        <img src="assets/img/like.svg" alt="">
-                                                                    </div>
+                                                                    <button class="like yeah">
+                                                                        <img class="yess"src="assets/img/likeoutline.svg" alt="">
+                                                                        <img class="yes d-none"src="assets/img/like.svg" alt="">
+                                                                    </button>
                                                                     <span>Liked(56)</span>
                                                                 </div>
                                                                 <div class="commentBox d-flex align-items-center">
@@ -1335,6 +1336,15 @@
             })
             user.addEventListener('click', ()=>{
                 notification.classList.toggle('showw')
+            })
+        </script>
+        <script>
+            let yeah = document.querySelector('.yeah')
+            let yes = document.querySelector('.yes')
+            let yess = document.querySelector('.yess')
+            yeah.addEventListener('click', ()=>{
+                yes.classList.toggle('d-none')
+                yess.classList.toggle('d-none')
             })
         </script>
         </body>

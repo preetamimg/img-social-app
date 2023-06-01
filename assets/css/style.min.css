@@ -662,6 +662,10 @@ body .overflow-auto-hidden {
 .dashBoardFluid .dashboardContainer .myPost .likeBox.activeimg {
   filter: brightness(1);
 }
+.dashBoardFluid .dashboardContainer .myPost .likeBox .like {
+  border: none;
+  background-color: transparent;
+}
 .dashBoardFluid .dashboardContainer .myPost .likeBox .like img {
   height: 15px;
   margin-right: 5px;
