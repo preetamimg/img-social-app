@@ -178,8 +178,8 @@
                     <!-- Hero Section Start -->
                     <div class="container-fluid connectionsFluid px-0 h-100">
                         <div class="container connectionsContainer notificationnn h-100">
-                            <div class="row pt-2 pb-5 h-100">
-                                <div class="col-xl-9 col-12 d-flex flex-column h-100 overflow-y-auto">
+                            <div class="row pt-2 h-100">
+                                <div class="col-xl-9 col-12 d-flex flex-column pb-5 h-100 overflow-y-auto">
                                     <div class="connectionsProfile">
                                         <div class="row overflow-hidden">  
                                             <div class="col-12">
@@ -190,9 +190,12 @@
                                             <div class="col-6">
                                                 <div class="row proBox">
                                                     <div class="col-auto">
-                                                        <div class="user">
-                                                            <img src="assets/img/user2.png" alt="">
-                                                        </div>
+                                                        <input type="file" class="d-none" name="" id="aa">
+                                                        <label for="aa">
+                                                            <div class="user">
+                                                                <img src="assets/img/user2.png" alt="">
+                                                            </div>
+                                                        </label>
                                                     </div>
                                                     <div class="col">
                                                         <div class="row">
@@ -217,32 +220,845 @@
                                                     <span><img src="assets/img/calanderGray.svg" alt="">Joined on Nov 26, 2023</span>
                                                 </div>
                                             </div>
-                                            <div class="col-12 py-2 px-4">
-                                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                                            <div class="col-12 py-2 px-4 mb-5">
+                                                <ul class="nav nav-pills navPills mb-3" id="pills-tab" role="tablist">
+                                                    <li class="nav-item navItems" role="presentation">
+                                                        <button class="nav-link  navLink active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Posts</button>
                                                         </li>
-                                                        <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                                        <li class="nav-item navItems" role="presentation">
+                                                        <button class="nav-link navLink " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Connections</button>
                                                         </li>
-                                                        <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                                        <li class="nav-item navItems" role="presentation">
+                                                        <button class="nav-link navLink " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Media</button>
                                                         </li>
-                                                        <li class="nav-item" role="presentation">
-                                                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                                                        <li class="nav-item navItems" role="presentation">
+                                                        <button class="nav-link navLink " id="pills-abs-tab" data-bs-toggle="pill" data-bs-target="#pills-abs" type="button" role="tab" aria-controls="pills-abs" aria-selected="false">Activity</button>
+                                                        </li>
+                                                        <li class="nav-item navItems" role="presentation">
+                                                        <button class="nav-link navLink " id="pills-abss-tab" data-bs-toggle="pill" data-bs-target="#pills-abss" type="button" role="tab" aria-controls="pills-abss" aria-selected="false">About</button>
                                                         </li>
                                                     </ul>
-                                                    <div class="tab-content" id="pills-tabContent">
-                                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-                                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                                                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                                                    <div class="tab-content tabContent" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active tabPane" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                                            <div class="row postTab">
+                                                                <div class="col-12">
+                                                                    <div class="row pb-2">
+                                                                        <div class="col-12">
+                                                                            <div class="shareThoughts">
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col-auto">
+                                                                                        <div class="who">
+                                                                                            <img src="assets/img/user1.png" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col">
+                                                                                        <textarea name="" class="textareaclass" id="" cols="30" rows="10" placeholder="Share your thoughts"></textarea>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row pt-3 pb-1">
+                                                                                    <div class="col-12 overflow-auto text-nowrap">
+                                                                                        <a href="javascript::" class="photo" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                            <img src="assets/img/gallary.svg" alt="">Photo
+                                                                                        </a>
+                                                                                        <a href="javascript::" class="photo ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                                                            <img src="assets/img/camera.svg" alt="">Video
+                                                                                        </a> 
+                                                                                        <a href="javascript::" class="photo ms-2">
+                                                                                            <img src="assets/img/calander.svg" alt="">Event
+                                                                                        </a>
+                                                                                        <a href="javascript::" class="photo ms-2">
+                                                                                            <img src="assets/img/smile.svg" alt="">Feeling/Activity
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row py-2">
+                                                                        <div class="col-12">
+                                                                            <div class="review">
+                                                                                <div class="row align-items-center">
+                                                                                    <div class="col">
+                                                                                        <div class="userBlog row align-items-center">
+                                                                                            <div class="col-auto">
+                                                                                                <div class="user">
+                                                                                                    <img src="assets/img/user2.png" alt="">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col ps-0">
+                                                                                                <div class="userName">Anthony Daugloi</div>
+                                                                                                <div class="Hour">2 hours ago</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <button class="menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                            <div class="dropdown drop"> 
+                                                                                                <ul class="dropdown-menu dropMenu">
+                                                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/save.svg" alt="">Save post</a></li>
+                                                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/unfollow.svg" alt="">Unfollow</a></li>
+                                                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/bane.svg" alt="">Hide</a></li>
+                                                                                                    <li><a class="dropdown-item dropItem" href="#"><img src="assets/img/flag.svg" alt="">Report Post</a></li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row py-2">
+                                                                                    <div class="col-12 description">
+                                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vero repellendus quae quis inventore rerum iste cum ducimus, tempora similique molestias fuga, omnis dolor provident. <a href="javascript:;" class="seeAnchor">See more</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row py-2 gx-2">
+                                                                                    <div class="col-4">
+                                                                                        <a href="assets/img/postimg3.jpg" class="glightbox2">
+                                                                                            <div class="imgg">
+                                                                                                <img src="assets/img/postimg3.jpg" alt="">
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-4">
+                                                                                        <a href="assets/img/postimg4.jpg" class="glightbox2">
+                                                                                            <div class="imgg">
+                                                                                                <img src="assets/img/postimg4.jpg" alt="">
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-4 box-container three-cols">
+                                                                                        <div class="overflow-hidden position-relative box show" style="transition-delay: 0s;">
+                                                                                            <div class="inner overflow-hidden">
+                                                                                                <a href="assets/img/postimg5.jpg" class=" imggg glightbox2">
+                                                                                                    <img src="assets/img/postimg5.jpg" alt="image" class="">
+                                                                                                    <div class="fadee">+2</div>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row gx-2">
+                                                                                    <div class="col-6">
+                                                                                        <a href="assets/img/postimg1.jpg" class="glightbox2">
+                                                                                            <div class="imgg">
+                                                                                                <img src="assets/img/postimg1.jpg" alt="">
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-6">
+                                                                                        <a href="assets/img/postimg2.jpg" class="glightbox2">
+                                                                                            <div class="imgg">
+                                                                                                <img src="assets/img/postimg2.jpg" alt="">
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade tabPane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                            <div class="row connectionsTab mx-0 pb-3">
+                                                                <div class="col-12 py-2">
+                                                                    <div class="heading">Connections</div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user4.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button class="removeBtn">Remove</button>
+                                                                            <button class="msgBtn">Message</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row connectionsTab mx-0 py-2">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user5.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button class="removeBtn">Remove</button>
+                                                                            <button class="msgBtn">Message</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row connectionsTab mx-0 py-2">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user6.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button class="removeBtn">Remove</button>
+                                                                            <button class="msgBtn">Message</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row connectionsTab mx-0 py-2">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user1.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button class="removeBtn">Remove</button>
+                                                                            <button class="msgBtn">Message</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row connectionsTab mx-0 py-2">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user2.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button class="removeBtn">Remove</button>
+                                                                            <button class="msgBtn">Message</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade tabPane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                                            <div class="row mediaTab">
+                                                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                                                    <div class="heading">Photo</div>
+                                                                    <button class="addMore"><img src="assets/img/addmore.svg" alt="">Create album</button>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row py-4 gy-4 position-relative">
+                                                                        <div class="col-3">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <input type="file" class="d-none" name="" id="aa">
+                                                                                    <label for="aa" class="addPic  d-flex align-items-center justify-content-center">
+                                                                                        <div class="row">
+                                                                                            <div class="col-12 text-center mb-2">
+                                                                                                <img src="assets/img/camera.svg" alt="">
+                                                                                            </div>
+                                                                                            <div class="col-12 text-center">
+                                                                                                <div class="txt">Add photo</div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb1.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb2.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb3.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb4.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb5.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb6.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3">
+                                                                            <div class="row uploadBox">
+                                                                                <div class="col-12">
+                                                                                    <div class="upload">
+                                                                                        <img src="assets/img/gb1.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 d-flex gap-2">
+                                                                                    <div class="like">
+                                                                                    <img src="assets/img/heartblue.svg" alt="">22k
+                                                                                    </div>
+                                                                                    <a href="javascript:;" class="msg stretched-link">
+                                                                                        <img src="assets/img/Chat Bubble.svg" alt="">3k
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade tabPane" id="pills-abs" role="tabpanel" aria-labelledby="pills-abs-tab" tabindex="0">
+                                                            <div class="row avtivityTab mx-0 pb-3">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user4.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <div class="status">just now</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row avtivityTab mx-0 pb-3">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user1.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <div class="status">just now</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row avtivityTab mx-0 pb-3">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user2.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <div class="status">6 hr</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row avtivityTab mx-0 pb-3">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center">
+                                                                        <div class="col-auto">
+                                                                            <div class="image">
+                                                                                <img src="assets/img/user5.png" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col ps-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="userName">Lori Ferguson <span>Full Stack Web Developer</span></div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="userAddress">
+                                                                                        Carolyn Ortiz, Frances Guerrero, and 20 other shared connections
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <div class="status">2 hr</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade tabPane" id="pills-abss" role="tabpanel" aria-labelledby="pills-abss-tab" tabindex="0">
+                                                            <div class="row aboutTab">
+                                                                <div class="col-12 heading">Profile Info</div>
+                                                                <div class="col-12 py-2">
+                                                                    <div class="overflow">
+                                                                        <div class="ovverflowHeading">Overview</div>
+                                                                        <div class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum saepe beatae fugit tempora, facere, eius aliquid sapiente temporibus ipsam distinctio natus voluptas aliquam adipisci! Voluptas Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea illum quae eius assumenda corrupti id veritatis sit, facilis similique maxime aspernatur magnam, adipisci dicta vero suscipit ratione doloremque in quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque architecto sequi ipsam? Ea voluptatum nesciunt aperiam, molestiae nam optio..</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row gy-2">
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/calanderGray.svg" alt="">
+                                                                                            <span>Born:</span>
+                                                                                            <span>October 20, 1990</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/heartgray.svg" alt="">
+                                                                                            <span>Status:</span>
+                                                                                            <span>Single</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/calanderGray.svg" alt="">
+                                                                                            <span>Lead Developer</span>
+                                                                                            <!-- <span>October 20, 1990</span> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/calanderGray.svg" alt="">
+                                                                                            <span>Lives in:</span>
+                                                                                            <span>New Hamspire</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/calanderGray.svg" alt="">
+                                                                                            <span>Lead Developer</span>
+                                                                                            <!-- <span>October 20, 1990</span> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <div class="col">
+                                                                                        <div class="date">
+                                                                                            <img src="assets/img/calanderGray.svg" alt="">
+                                                                                            <span>Lives in:</span>
+                                                                                            <span>New Hamspire</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-auto">
+                                                                                        <div class="menu">
+                                                                                            <img src="assets/img/menuHorizontal.svg" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 py-3">
+                                                                    <div class="row">
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <a href="javascript:;" class="col-12 text-center btnn">
+                                                                                        Add a workplace
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <div class="tabb w-100 px-0">
+                                                                                <div class="row w-100 mx-0">
+                                                                                    <a href="javascript:;" class="col-12 text-center btnn">
+                                                                                        Add a education
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-3 h-100 overflow-y-auto colend">
+                                <div class="col-3 h-100 overflow-y-auto">
+                                    <div class="row friendBox">
+                                        <div class="col-12 px-0 d-flex justify-content-between align-items-center">
+                                            <div class="heading">Friends <span>230</span></div>
+                                            <div class="btnn"><button class="seeBtn">See all friends</button></div>
+                                        </div>
+                                        <div class="col-12 pt-4 px-0">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="javascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user9.jpg" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <a href="javascript:;" class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </a>
+                                                                <a href="javascript:;" class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="jvascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user8.jpg" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <div class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </div>
+                                                                <div class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-4 px-0">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="javascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user1.png" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <a href="javascript:;" class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </a>
+                                                                <a href="javascript:;" class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="jvascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user10.jpg" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <div class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </div>
+                                                                <div class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 pt-4 px-0">
+                                            <div class="row g-3">
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="javascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user4.png" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <a href="javascript:;" class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </a>
+                                                                <a href="javascript:;" class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="clip">
+                                                        <div class="row">
+                                                            <a href="jvascript:;" class="col-12">
+                                                                <div class="pic m-auto">
+                                                                    <img src="assets/img/user3.png" alt="">
+                                                                </div>
+                                                            </a>
+                                                            <div class="col-12 py-2">
+                                                                <div class="picName text-center">Amanada Reed</div>
+                                                                <div class="connection text-center">16 mutual connections</div>
+                                                            </div>
+                                                            <div class="col-12 pt-2 d-flex justify-content-center">
+                                                                <div class="msg">
+                                                                    <img src="assets/img/Messages.svg" alt="">
+                                                                </div>
+                                                                <div class="usre">
+                                                                    <img src="assets/img/User cancel.svg" alt="" srcset="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
