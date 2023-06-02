@@ -450,6 +450,11 @@
                     & .eventDiscription{
                         font-size: 12px;
                         color: $gray-500;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
                 }
                 & .myPost{
@@ -1063,18 +1068,19 @@
                         & .editBtn{
                             background-color: transparent;
                             border: none;
-                            background-color: lighten($color: $red, $amount: 50);
+                            background-color: lighten($color: $theme1, $amount: 40);
                             padding: 8px 16px;
                             border-radius: 6px;
                             font-size: 14px;
                             font-weight: 500;
-                            color: $red;
+                            color: $theme1;
                             & img{
                                 margin-right: 5px;
                                 height: 15px;
+                                filter: brightness(0);
                             }
                             &:hover{
-                                background-color: $red;
+                                background-color: $blue;
                                 color: $white;
                                 & img{
                                     filter: brightness(100);
@@ -3392,21 +3398,27 @@
                     & .viewMore{
                     }
                 }
-                & .addstory{
-                    & .add{
-                        & img{
-                        }
-                    }
-                    & .addText{
-                    }
-                }
-                & .carousel{
-                    & .swiperSlide{
-                        & .stories{
+                & .col3Width{
+                    width: 140px;
+                    & .addstory{
+                        & .add{
                             & img{
                             }
                         }
-                        & .storyName{
+                        & .addText{
+                        }
+                    }
+                }
+                & .col9Width{
+                    width: calc(100% - 140px);
+                    & .carousel{
+                        & .swiperSlide{
+                            & .stories{
+                                & img{
+                                }
+                            }
+                            & .storyName{
+                            }
                         }
                     }
                 }
@@ -3640,7 +3652,9 @@
         .topNavbar{
             & .header{
                 & .logo{
+                    font-size: 24px;
                     & img{
+                        height: 23px;
                     }
                 }
                 & .input{
@@ -3661,6 +3675,11 @@
                 }
                 & .endLinks{
                     & img{
+                        height: 20px;
+                    }
+                    &.proPic{
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
