@@ -1215,6 +1215,12 @@ body .overflow-auto-hidden {
   margin-right: 6px;
   margin-top: -5px;
 }
+.connectionsFluid .connectionsContainer .navPills {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-y: auto;
+}
 .connectionsFluid .connectionsContainer .navPills .navItems .navLink {
   color: #000;
   background-color: #fff;
@@ -1249,6 +1255,11 @@ body .overflow-auto-hidden {
   font-size: 16px;
   font-weight: 500;
   color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connectionsFluid .connectionsContainer .tabContent .tabPane .connectionsTab .userName span {
   font-size: 13px;
@@ -1257,6 +1268,11 @@ body .overflow-auto-hidden {
 .connectionsFluid .connectionsContainer .tabContent .tabPane .connectionsTab .userAddress {
   font-size: 14px;
   color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connectionsFluid .connectionsContainer .tabContent .tabPane .connectionsTab .removeBtn {
   font-size: 14px;
@@ -1506,6 +1522,11 @@ body .overflow-auto-hidden {
   font-size: 16px;
   font-weight: 500;
   color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connectionsFluid .connectionsContainer .tabContent .tabPane .avtivityTab .userName span {
   font-size: 13px;
@@ -1514,6 +1535,11 @@ body .overflow-auto-hidden {
 .connectionsFluid .connectionsContainer .tabContent .tabPane .avtivityTab .userAddress {
   font-size: 14px;
   color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connectionsFluid .connectionsContainer .tabContent .tabPane .avtivityTab .status {
   font-size: 13px;
@@ -1537,6 +1563,11 @@ body .overflow-auto-hidden {
 .connectionsFluid .connectionsContainer .tabContent .tabPane .aboutTab .overflow .para {
   font-size: 13px;
   color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .connectionsFluid .connectionsContainer .tabContent .tabPane .aboutTab .tabb {
   border: 1px solid #adb5bd;
@@ -1642,6 +1673,326 @@ body .overflow-auto-hidden {
   height: 20px;
 }
 
+.chatFluid {
+  background-color: #EFF2F6;
+  height: calc(100% - 80px) !important;
+}
+.chatFluid .chatContainer .header {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .header .heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+.chatFluid .chatContainer .header .heading span {
+  background-color: #ffd1d6;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .header .editIcon {
+  background-color: #d0e0ff;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.chatFluid .chatContainer .header .editIcon img {
+  height: 15px;
+}
+.chatFluid .chatContainer .header .editIcon:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .header .inp {
+  height: 50px;
+  font-size: 13px;
+  border-color: #dee2e6;
+  padding-left: 16px;
+}
+.chatFluid .chatContainer .header .search {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+}
+.chatFluid .chatContainer .header .search img {
+  filter: brightness(0);
+  height: 15px;
+}
+.chatFluid .chatContainer .header .active {
+  background-color: #eaf1ff;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+.chatFluid .chatContainer .header .active .user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #377dff;
+  overflow: hidden;
+}
+.chatFluid .chatContainer .header .active .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatFluid .chatContainer .header .active .userName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.chatFluid .chatContainer .header .active .userData {
+  font-size: 13px;
+  color: #495057;
+}
+.chatFluid .chatContainer .header .user {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.chatFluid .chatContainer .header .user.blue {
+  border: 3px solid #377dff;
+}
+.chatFluid .chatContainer .header .user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatFluid .chatContainer .header .userName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.chatFluid .chatContainer .header .userData {
+  font-size: 13px;
+  color: #495057;
+}
+.chatFluid .chatContainer .headerr {
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .headerr .online {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.chatFluid .chatContainer .headerr .online img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatFluid .chatContainer .headerr .onlineName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+.chatFluid .chatContainer .headerr .onlineStatus {
+  font-size: 13px;
+}
+.chatFluid .chatContainer .headerr .onlineStatus span {
+  width: 10px;
+  height: 10px;
+  background-color: #00aa47;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.chatFluid .chatContainer .chatBox {
+  padding: 10px 5px;
+}
+.chatFluid .chatContainer .vedio {
+  background-color: #d0e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.chatFluid .chatContainer .vedio img {
+  height: 20px;
+}
+.chatFluid .chatContainer .vedio:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .call {
+  background-color: #d0e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.chatFluid .chatContainer .call:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .menu {
+  background-color: #d0e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.chatFluid .chatContainer .menu img {
+  height: 15px;
+}
+.chatFluid .chatContainer .menu:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .filter {
+  background-color: #d0e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.chatFluid .chatContainer .filter img {
+  height: 15px;
+}
+.chatFluid .chatContainer .filter:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .footer {
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .footer .footerInp {
+  font-size: 13px;
+  height: 50px;
+}
+.chatFluid .chatContainer .footer .emojionearea .emojionearea-button {
+  right: 20px;
+  top: 10px;
+}
+.chatFluid .chatContainer .footer .smile {
+  background-color: #ffe7a0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatFluid .chatContainer .footer .smile img {
+  height: 16px;
+}
+.chatFluid .chatContainer .footer .smile:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .footer .send {
+  background-color: #d0e0ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatFluid .chatContainer .footer .send img {
+  height: 15px;
+}
+.chatFluid .chatContainer .footer .send:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .footer .attach {
+  background-color: #d0e0ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatFluid .chatContainer .footer .attach img {
+  height: 15px;
+}
+.chatFluid .chatContainer .footer .attach:hover {
+  cursor: pointer;
+}
+.chatFluid .chatContainer .chatBox .activeStatus {
+  font-size: 13px;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .imgg {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .imgg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .chat {
+  font-size: 15px;
+  color: #000;
+  background-color: #dfe5ed;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .timing {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  margin-left: 57px;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .sendd {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.chatFluid .chatContainer .chatBox .chatBoxInner .sendd img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .imgg {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .imgg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .chat {
+  font-size: 15px;
+  color: #000;
+  background-color: #0052ea;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 6px;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .timingg {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: end;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .send {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.chatFluid .chatContainer .chatBox .chatBoxOuter .send img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .modalFade .modalDialog .modalContent .modalHeader {
   padding: 20px;
 }
@@ -1744,6 +2095,19 @@ body .overflow-auto-hidden {
   }
   .dashBoardFluid .dashboardContainer.notificationnn:not(.show) .colend {
     transform: translateX(100%);
+  }
+  .chatFluid .chatContainer.leftBar.show .header2 {
+    transform: translateX(0);
+    background-color: #fff;
+    width: 300px;
+    z-index: 2;
+  }
+  .chatFluid .chatContainer .header2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
   }
 }
 @media (max-width: 767.98px) {

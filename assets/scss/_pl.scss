@@ -1123,6 +1123,10 @@
                     }
                 }
                 & .navPills{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    white-space: nowrap;
+                    overflow-y: auto;
                     & .navItems{
                         & .navLink{
                             color: $black;
@@ -1163,6 +1167,11 @@
                                 font-size: 16px;
                                 font-weight: 500;
                                 color: $black;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                                 & span{
                                     font-size: 13px;
                                     color: $gray-600;
@@ -1171,6 +1180,11 @@
                             & .userAddress{
                                 font-size: 14px;
                                 color: $black;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                             & .removeBtn{
                                 font-size: 14px;
@@ -1431,6 +1445,11 @@
                                 font-size: 16px;
                                 font-weight: 500;
                                 color: $black;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                                 & span{
                                     font-size: 13px;
                                     color: $gray-600;
@@ -1439,6 +1458,11 @@
                             & .userAddress{
                                 font-size: 14px;
                                 color: $black;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                             & .status{
                                 font-size: 13px;
@@ -1463,6 +1487,11 @@
                                 & .para{
                                     font-size: 13px;
                                     color: $black;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 4;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
                                 }
                             }
                             & .tabb{
@@ -1571,6 +1600,345 @@
                             padding: 5px 8px;
                             & img{
                                 height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // chat page
+        .chatFluid{
+            background-color: $theme2;
+            height: calc(100% - 80px) !important;
+            & .chatContainer{
+                & .header{
+                    background-color: $white;
+                    padding: 20px;
+                    border-radius: 6px;
+                    & .heading{
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: $black;
+                        & span{
+                            background-color: lighten($color: $red, $amount: 50);
+                            padding: 5px 8px;
+                            border-radius: 6px
+                        }
+                    }
+                    & .editIcon{
+                        background-color: lighten($color: $blue, $amount:30);
+                        border-radius: 6px;
+                        padding: 5px 10px;
+                        & img{
+                            height: 15px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    & .inp{
+                        height: 50px;
+                        font-size: 13px;
+                        border-color: $gray-300;
+                        padding-left: 16px;
+                    }
+                    & .search{
+                        position: absolute;
+                        right: 25px;
+                        top: 50%;
+                        & img{
+                            filter: brightness(0);
+                            height: 15px;
+                        }
+                    }
+                    & .active{
+                        background-color: lighten($color: $blue, $amount: 35);
+                        border-radius: 6px;
+                        margin: 8px 0;
+                        & .user{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            border: 3px solid $blue;
+                            overflow: hidden;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .userName{
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $black;
+                        }
+                        & .userData{
+                            font-size: 13px;
+                            color: $gray-700;
+                        }
+                    }
+                    & .user{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        &.blue{
+                            border: 3px solid $blue;
+                        }
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .userName{
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+                    & .userData{
+                        font-size: 13px;
+                        color: $gray-700;
+                    }
+                }
+                & .headerr{
+                    background-color: $white;
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    & .online{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    & .onlineName{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $black;
+                    }
+                    & .onlineStatus{
+                        font-size: 13px;
+                        & span{
+                            width: 10px;
+                            height: 10px;
+                            background-color: $green;
+                            border-radius: 50%;
+                            display: inline-block;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                & .chatBox{
+                    padding: 10px 5px;
+                }
+                & .vedio{
+                    background-color:lighten($color: $blue, $amount: 30);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    & img{
+                        height: 20px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                & .call{
+                    background-color:lighten($color: $blue, $amount: 30);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    & img{
+
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                & .menu{
+                    background-color:lighten($color: $blue, $amount: 30);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    & img{
+                        height: 15px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                & .filter{
+                    background-color:lighten($color: $blue, $amount: 30);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    & img{
+                        height: 15px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                & .footer{
+                    background-color: $white;
+                    padding: 10px 10px;
+                    border-radius: 6px;
+                    & .footerInp{
+                        font-size: 13px;
+                        height: 50px;
+                    }
+                    & .emojionearea {
+                        & .emojionearea-editor{
+                        }
+                        & .emojionearea-button{
+                            right: 20px;
+                            top: 10px;
+                        }
+                        & .emojionearea-picker{
+
+                        }
+                    }
+                    & .smile{
+                        background-color: lighten($color: $yellow, $amount: 30);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            height: 16px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    & .send{
+                        background-color: lighten($color: $blue, $amount: 30);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            height: 15px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    & .attach{
+                        background-color: lighten($color: $blue, $amount: 30);
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            height: 15px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                        font-size: 13px;
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            width: 40px;
+                            height: 40px;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .chat{
+                            font-size: 15px;
+                            color: $black;
+                            background-color:darken($color: $theme2, $amount: 5);
+                            padding: 8px 16px;
+                            border-radius: 6px;
+                        }
+                        & .timing{
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $black;
+                            margin-left: 57px;
+                        }
+                        & .sendd{
+                            width: 200px;
+                            height: 200px;
+                            overflow: hidden;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 6px;
+                            }
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            width: 40px;
+                            height: 40px;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .chat{
+                            font-size: 15px;
+                            color: $black;
+                            background-color:darken($color: $blue, $amount: 15);
+                            padding: 8px 16px;
+                            color: $white;
+                            border-radius: 6px;
+                        }
+                        & .timingg{
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $black;
+                            display: flex;
+                            justify-content: end;
+                        }
+                        & .send{
+                            width: 200px;
+                            height: 200px;
+                            overflow: hidden;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 6px
                             }
                         }
                     }
@@ -2061,6 +2429,124 @@
                 }
             }
         }
+        // chat page
+        .chatFluid{
+            & .chatContainer{
+                & .header{
+                    & .heading{
+                        & span{
+                        }
+                    }
+                    & .editIcon{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .inp{
+                    }
+                    & .search{
+                        & img{
+                        }
+                    }
+                    & .active{
+                        & .user{
+                            & img{
+                            }
+                        }
+                        & .userName{
+                        }
+                        & .userData{
+                        }
+                    }
+                    & .user{
+                        &.blue{
+                        }
+                        & img{
+                        }
+                    }
+                    & .userName{
+                    }
+                    & .userData{
+                    }
+                }
+                & .headerr{
+                    & .online{
+                        & img{
+                        }
+                    }
+                    & .onlineName{
+                    }
+                    & .onlineStatus{
+                        & span{
+                        }
+                    }
+                }
+                & .chatBox{
+                }
+                & .vedio{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .call{
+                    & img{
+
+                    }
+                    &:hover{
+                    }
+                }
+                & .menu{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .footer{
+                    & .footerInp{
+                    }
+                    & .smile{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .send{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .attach{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(xl) {
@@ -2496,6 +2982,124 @@
                 }
             }
         }
+        // chat page
+        .chatFluid{
+            & .chatContainer{
+                & .header{
+                    & .heading{
+                        & span{
+                        }
+                    }
+                    & .editIcon{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .inp{
+                    }
+                    & .search{
+                        & img{
+                        }
+                    }
+                    & .active{
+                        & .user{
+                            & img{
+                            }
+                        }
+                        & .userName{
+                        }
+                        & .userData{
+                        }
+                    }
+                    & .user{
+                        &.blue{
+                        }
+                        & img{
+                        }
+                    }
+                    & .userName{
+                    }
+                    & .userData{
+                    }
+                }
+                & .headerr{
+                    & .online{
+                        & img{
+                        }
+                    }
+                    & .onlineName{
+                    }
+                    & .onlineStatus{
+                        & span{
+                        }
+                    }
+                }
+                & .chatBox{
+                }
+                & .vedio{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .call{
+                    & img{
+
+                    }
+                    &:hover{
+                    }
+                }
+                & .menu{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .footer{
+                    & .footerInp{
+                    }
+                    & .smile{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .send{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .attach{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -2918,6 +3522,141 @@
                 }
             }
         }
+        // chat page
+        .chatFluid{
+            & .chatContainer{  
+                &.leftBar{
+                    &.show{
+                        & .header2{
+                            transform: translateX(0);
+                            background-color: $white;
+                            width: 300px;
+                            z-index: 2;
+                        }
+                    }
+                }
+                & .header2{
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: translateX(-100%);
+                transition: 0.3s ease-in-out;
+                }
+                & .header{
+                    & .heading{
+                        & span{
+                        }
+                    }
+                    & .editIcon{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .inp{
+                    }
+                    & .search{
+                        & img{
+                        }
+                    }
+                    & .active{
+                        & .user{
+                            & img{
+                            }
+                        }
+                        & .userName{
+                        }
+                        & .userData{
+                        }
+                    }
+                    & .user{
+                        &.blue{
+                        }
+                        & img{
+                        }
+                    }
+                    & .userName{
+                    }
+                    & .userData{
+                    }
+                }
+                & .headerr{
+                    & .online{
+                        & img{
+                        }
+                    }
+                    & .onlineName{
+                    }
+                    & .onlineStatus{
+                        & span{
+                        }
+                    }
+                }
+                & .chatBox{
+                }
+                & .vedio{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .call{
+                    & img{
+
+                    }
+                    &:hover{
+                    }
+                }
+                & .menu{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .footer{
+                    & .footerInp{
+                    }
+                    & .smile{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .send{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .attach{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -3337,6 +4076,124 @@
                     }
                 }
                 & .numberss{
+                }
+            }
+        }
+        // chat page
+        .chatFluid{
+            & .chatContainer{
+                & .header{
+                    & .heading{
+                        & span{
+                        }
+                    }
+                    & .editIcon{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .inp{
+                    }
+                    & .search{
+                        & img{
+                        }
+                    }
+                    & .active{
+                        & .user{
+                            & img{
+                            }
+                        }
+                        & .userName{
+                        }
+                        & .userData{
+                        }
+                    }
+                    & .user{
+                        &.blue{
+                        }
+                        & img{
+                        }
+                    }
+                    & .userName{
+                    }
+                    & .userData{
+                    }
+                }
+                & .headerr{
+                    & .online{
+                        & img{
+                        }
+                    }
+                    & .onlineName{
+                    }
+                    & .onlineStatus{
+                        & span{
+                        }
+                    }
+                }
+                & .chatBox{
+                }
+                & .vedio{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .call{
+                    & img{
+
+                    }
+                    &:hover{
+                    }
+                }
+                & .menu{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .footer{
+                    & .footerInp{
+                    }
+                    & .smile{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .send{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .attach{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
                 }
             }
         }
@@ -3772,6 +4629,124 @@
                     }
                 }
                 & .numberss{
+                }
+            }
+        }
+        // chat page
+        .chatFluid{
+            & .chatContainer{
+                & .header{
+                    & .heading{
+                        & span{
+                        }
+                    }
+                    & .editIcon{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .inp{
+                    }
+                    & .search{
+                        & img{
+                        }
+                    }
+                    & .active{
+                        & .user{
+                            & img{
+                            }
+                        }
+                        & .userName{
+                        }
+                        & .userData{
+                        }
+                    }
+                    & .user{
+                        &.blue{
+                        }
+                        & img{
+                        }
+                    }
+                    & .userName{
+                    }
+                    & .userData{
+                    }
+                }
+                & .headerr{
+                    & .online{
+                        & img{
+                        }
+                    }
+                    & .onlineName{
+                    }
+                    & .onlineStatus{
+                        & span{
+                        }
+                    }
+                }
+                & .chatBox{
+                }
+                & .vedio{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .call{
+                    & img{
+
+                    }
+                    &:hover{
+                    }
+                }
+                & .menu{
+                    & img{
+                    }
+                    &:hover{
+                    }
+                }
+                & .footer{
+                    & .footerInp{
+                    }
+                    & .smile{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .send{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                    & .attach{
+                        & img{
+                        }
+                        &:hover{
+                        }
+                    }
+                }
+                & .chatBox{
+                    & .activeStatus{
+                    }
+                    & .chatBoxInner{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
+                    & .chatBoxOuter{
+                        & .imgg{
+                            & img{
+                            }
+                        }
+                        & .chat{
+                        }
+                    }
                 }
             }
         }
