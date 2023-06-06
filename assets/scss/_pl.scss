@@ -375,8 +375,15 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transition: 0.3s linear;
                         & img{
                             height: 10px;
+                        }
+                        &:hover{
+                            background-color: $blue;
+                            & img{
+                                filter: brightness(20);
+                            }
                         }
                     }
                     & .confirmBtn{
@@ -387,6 +394,10 @@
                         font-weight: 500;
                         color: $white;
                         padding: 5px 25px;
+                        transition: 0.3s linear;
+                        &:hover{
+                            opacity: 0.8;
+                        }
                     }
                     & .delBtn{
                         background-color: $gray-200;
@@ -395,7 +406,11 @@
                         font-size: 13px;
                         font-weight: 500;
                         color: $black;
+                        transition: 0.3s linear;
                         padding: 5px 25px;
+                        &:hover{
+                            background-color: $gray-400
+                        }
                     }
                     & .viewBtn{
                         background-color: lighten($color: $blue, $amount: 30);
@@ -407,6 +422,11 @@
                         border-radius: 6px;
                         width: 100%;
                         margin-top: 5px;
+                        transition: 0.3s linear;
+                        &:hover{
+                            background-color: $blue;
+                            color: $white;
+                        }
                     }
                 }
                 & .events{
@@ -544,10 +564,10 @@
                     & .commentBox{
                         & .like{
                             & img{
-                                height: 15px;
+                                height: 13px;
                                 margin-right: 5px;
                                 margin-top: -5px;
-                                filter: brightness(0.1);
+                                filter: brightness(0.6);
                             }
                         }
                         & span{
@@ -658,17 +678,17 @@
                     border-radius: 6px;
                     padding: 20px;
                     & .propleuKnowBoxHhead{
-                        font-size: 16px;
+                        font-size: 14px;
                         font-weight: 700;
                         color: $black;
                     }
                     & .propleuKnowBoxBtn{
                         background-color: lighten($color: $blue, $amount: 30);
                         border-radius: 6px;
-                        font-size: 14px;
+                        font-size: 13px;
                         font-weight: 500;
                         color: $black;
-                        padding: 8px 16px;
+                        padding: 5px 12px;
                         border: none;
                     }
                 }
@@ -4508,6 +4528,7 @@
         // group page
         .topNavbar{
             & .header{
+                height: 65px;
                 & .logo{
                     font-size: 24px;
                     & img{
@@ -4532,11 +4553,23 @@
                 }
                 & .endLinks{
                     & img{
-                        height: 20px;
+                        height: 25px;
                     }
                     &.proPic{
                         width: 30px;
                         height: 30px;
+                    }
+                    & .badges{
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 8px;
+                        font-size: 10px;
+                        position: absolute !important;
+                        right: -11px;
                     }
                 }
             }

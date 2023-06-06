@@ -521,9 +521,16 @@ body .overflow-auto-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s linear;
 }
 .dashBoardFluid .dashboardContainer .friendRequest .plus img {
   height: 10px;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .plus:hover {
+  background-color: #377dff;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .plus:hover img {
+  filter: brightness(20);
 }
 .dashBoardFluid .dashboardContainer .friendRequest .confirmBtn {
   background-color: #377dff;
@@ -533,6 +540,10 @@ body .overflow-auto-hidden {
   font-weight: 500;
   color: #fff;
   padding: 5px 25px;
+  transition: 0.3s linear;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .confirmBtn:hover {
+  opacity: 0.8;
 }
 .dashBoardFluid .dashboardContainer .friendRequest .delBtn {
   background-color: #e9ecef;
@@ -541,7 +552,11 @@ body .overflow-auto-hidden {
   font-size: 13px;
   font-weight: 500;
   color: #000;
+  transition: 0.3s linear;
   padding: 5px 25px;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .delBtn:hover {
+  background-color: #ced4da;
 }
 .dashBoardFluid .dashboardContainer .friendRequest .viewBtn {
   background-color: #d0e0ff;
@@ -553,6 +568,11 @@ body .overflow-auto-hidden {
   border-radius: 6px;
   width: 100%;
   margin-top: 5px;
+  transition: 0.3s linear;
+}
+.dashBoardFluid .dashboardContainer .friendRequest .viewBtn:hover {
+  background-color: #377dff;
+  color: #fff;
 }
 .dashBoardFluid .dashboardContainer .events {
   background-color: #fff;
@@ -680,10 +700,10 @@ body .overflow-auto-hidden {
   font-size: 12px;
 }
 .dashBoardFluid .dashboardContainer .myPost .commentBox .like img {
-  height: 15px;
+  height: 13px;
   margin-right: 5px;
   margin-top: -5px;
-  filter: brightness(0.1);
+  filter: brightness(0.6);
 }
 .dashBoardFluid .dashboardContainer .myPost .commentBox span {
   font-size: 12px;
@@ -785,17 +805,17 @@ body .overflow-auto-hidden {
   padding: 20px;
 }
 .dashBoardFluid .dashboardContainer .propleuKnowBox .propleuKnowBoxHhead {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #000;
 }
 .dashBoardFluid .dashboardContainer .propleuKnowBox .propleuKnowBoxBtn {
   background-color: #d0e0ff;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #000;
-  padding: 8px 16px;
+  padding: 5px 12px;
   border: none;
 }
 .dashBoardFluid .dashboardContainer .cards {
@@ -2141,6 +2161,9 @@ body .overflow-auto-hidden {
   .dashBoardFluid .dashboardContainer .col9Width {
     width: calc(100% - 140px);
   }
+  .topNavbar .header {
+    height: 65px;
+  }
   .topNavbar .header .logo {
     font-size: 24px;
   }
@@ -2148,10 +2171,22 @@ body .overflow-auto-hidden {
     height: 23px;
   }
   .topNavbar .header .endLinks img {
-    height: 20px;
+    height: 25px;
   }
   .topNavbar .header .endLinks.proPic {
     width: 30px;
     height: 30px;
+  }
+  .topNavbar .header .endLinks .badges {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 10px;
+    position: absolute !important;
+    right: -11px;
   }
 }/*# sourceMappingURL=style.min.css.map */
